@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+    <style>
+    h1{
+        font-family: sans- srif;
+    }
+    p{
+        font-weight: 600;
+    }
+    body {
+        front-size: 16px;
+    }
+    p {
+        fron-size: 3em;
+    }
+    li{
+        font-style: italic;
+        line-height: 30px;
+        text-align: justify;
+        text-decoration: aqua; text-decoration: solid;
+        font-size: 2em;
+
+    }
+    #amarelo {background-color: #ffff00;}
+    #vermelho {background-color: #ff0000;}
+    #marrom {background-color: #a62;}
+    </style>
+  </head>
+  <body>
+    <h1>Exercícios 3.2</h1>
+    <p>Qual é a sua cor favorita?</p>
+    <ul>
+      <li>Amarelo</li>
+      <li>Vermelho</li>
+      <li>Marrom</li>
+    </ul>
+  </body>
+</html>
