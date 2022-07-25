@@ -153,5 +153,97 @@ for (let index = 0; index < n; index += 1) {
 let n = 5
 let inputLine = '';
 let symbol = '*';
+let position = size
+
+for (let index = 0; index < size; index += 1) {
+for(let colunAindex = 0; colunAindex < size; colunAindex += 1){
+    if (colunAindex < position){
+    inputLine = inputLine + '';
+} else {
+    inputLine = inputLine + symbol;
+}
+}
+    inputLine = inputLine + symbol;
+   console.log(inputLine);
+}
+---------------------------
+
+let n = 5
+let inputLine = '';
+let symbol = '*';
+let inputPosition = size
+
+for (let index = 0; index < size; index += 1) {
+for(let colunAindex = 0; colunAindex < size; colunAindex += 1){
+    if (colunAindex < position){
+    inputLine = inputLine + '';
+} else {
+    inputLine = inputLine + symbol;
+}
+}
+    inputLine = '';
+    inputPosition -= 1;
+   console.log(inputLine);
+}
+
+//exercicio 4 (esse é a solucão do gabariro!)
 
 
+let n = 5;
+let symbol = '*';
+let inputLine = '';
+
+let midOfMatrix = (n + 1) / 2; // como pedir a posicao central, o meio! 
+let controlLeft = midOfMatrix;
+let controlRight = midOfMatrix;
+
+for (let lineIndex = 0; lineIndex <= midOfMatrix; lineIndex += 1) { // a altura agora é quantidade de linhas, não a base, não o n
+  for (let columnIndex = 0; columnIndex <= n; columnIndex += 1) {
+    if (columnIndex > controlLeft && columnIndex < controlRight) {
+      inputLine = inputLine + symbol;
+    } else {
+      inputLine = inputLine + ' ';
+    }
+  }
+  console.log(inputLine);
+  inputLine = '';
+  controlRight += 1;
+  controlLeft -= 1
+};
+-----------
+
+let n = 5;
+let symbol = '*';
+let inputLine = '';
+
+let meioTriangulo = (n + 1) / 2;
+let centroEsquerdo = meioTriangulo;
+let centroDireito = meioTriangulo;
+
+
+
+for (let index = 0; index <= meioTriangulo; index += 1) {
+for(let colunAindex = 0; colunAindex <= n; colunAindex += 1){
+    if (colunAindex > centroEsquerdo && colunAindex < centroDireito){
+    inputLine = inputLine + symbol;
+} else {
+    inputLine = inputLine + '';
+}
+}
+    inputLine = '';
+    centroDireito += 1;
+    centroEsquerdo -= 1;
+    
+   console.log(inputLine);
+}
+//exercicio 6
+
+let divisor = 1
+let lista = 87
+
+for(let index = 2; index < lista.length; index += 1) {
+    if(lista % index === 0) divisor += 1;
+}   if(divisor === 2) console.log(lista + 'é primo');
+    else{
+        console.log(lista + ' não é primo');
+    }
